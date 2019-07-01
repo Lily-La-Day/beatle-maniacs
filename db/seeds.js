@@ -660,6 +660,22 @@ mongoose.connect(dbURI, { useNewUrlParser: true, useCreateIndex: true }, (err, d
           user: users[0]
 
         }
+
+        ,
+
+        {
+
+          title: 'Strawberry Fields Forever',
+          year: 1967,
+          single: true,
+
+          album: 'Penny Lane',
+
+          writtenBy: 'John Lennon',
+          audio: 'https://cdns-preview-e.dzcdn.net/stream/c-e448e8e4e24a74cd54f2ccc45dc0b521-7.mp3',
+          user: users[0]
+
+        }
       ])
     })
     .then(() => console.log('tracks galore!'))
