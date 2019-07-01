@@ -42,7 +42,7 @@ class TracksShow extends React.Component {
 
         <Rating track={track} />
 
-        <h1>Star Total: {track.ratingsTotal}</h1>
+
 
 
       </section>
