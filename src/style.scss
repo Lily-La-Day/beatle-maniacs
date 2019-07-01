@@ -1,0 +1,290 @@
+
+* {
+
+  color: white;
+}
+
+.frontSection, .disc {
+  background-color: black;
+}
+
+.songSection, .starSection {
+
+  font-family: 'Cutive Mono', monospace;
+
+  background-color: grey;
+
+  h2 {
+
+    color: white !important;
+    text-align: center;
+    font-size: 2em;
+
+  }
+
+  button {
+    margin-top: 20px;
+    margin-left: 42%;
+  }
+}
+
+h2 {
+
+  color: white !important;
+  text-align: center;
+  font-size: 1em;
+
+}
+
+
+
+audio {
+  margin: 0 auto;
+  opacity: 1;
+  width: 300px;
+  height: 25px;
+}
+
+
+.container {
+  margin: 0 auto;
+}
+
+
+.disc {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+
+  background-image: url("./assets/beatles.svg");
+  background-repeat: no-repeat;
+}
+
+span {
+  background-color: black
+}
+
+h3 {
+
+  text-align: center;
+  font-family: 'Cutive Mono', monospace;
+  color: white;
+  letter-spacing: -1pt;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  font-weight: 1000;
+  margin-top: 4em !important;
+  color: white;
+  font-size: 1em;
+}
+
+body {
+  font-family: 'Special Elite', cursive;
+
+}
+
+.home {
+  height: 100vh;
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 45pt;
+  color: white;
+  h1 {
+    font-size: 45pt;
+    color: white;
+    margin-left: 180px;
+  }
+
+}
+
+* {
+  font-family: inherit;
+  color: black;
+  text-decoration: none;
+
+}
+
+.figure img {
+  background-color: grey;
+}
+
+h1 {
+  font-family: 'Cutive Mono', monospace;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 40px;
+}
+
+
+
+
+
+
+
+
+.starSection {
+  width: 250px;
+  margin: 0 auto;
+}
+
+.starBefore {
+  width: 50px;
+  opacity: 0.2;
+}
+
+.starBefore:hover {
+  opacity: 1
+}
+
+.starAfter {
+  opacity: 1;
+}
+
+.star-text {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.trackTitle {
+  padding-top: 20px;
+}
+
+
+
+
+.navbar {
+display: flex;
+  height: 80px;
+flex-wrap: wrap;
+
+  .open-stars {
+
+  }
+
+  h6 {
+    background-color: white;
+    font-size: 0.6em;
+    margin-bottom: 10px;
+    position: fixed;
+  }
+  text-align: center;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  margin-bottom: 2px;
+  background-color: white;
+  font-family: 'Special Elite', cursive;
+
+
+  a {
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+
+  }
+  button {
+    padding: 5px;
+    display: inline;
+  }
+
+}
+
+
+
+h5 {
+  margin-top: 10px;
+}
+
+
+
+form {
+
+  font-family: 'Cutive Mono', monospace;
+  margin-bottom: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: center;
+  ::placeholder {
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+  }
+  button {
+    margin: 0 auto;
+  }
+  input {
+    margin: 20px;
+  }
+
+}
+
+button {
+  display: block;
+}
+
+
+
+.star-board, .song-board {
+  margin: 0 auto;
+  width: 300px;
+  background-color: white;
+  font-weight: bold;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 12pt;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+  z-index: 5;
+
+
+}
+
+.song-board {
+width: 450px;
+
+}
+
+.open-modal {
+
+border: none;
+
+}
+
+.close-modal {
+  height: 20px;
+}
+
+.modal-main {
+  background-color: white;
+  font-family:'Cutive Mono', monospace;
+  text-align: center;
+  border-radius: 20px;
+  border: 2px solid black;
+  padding: 20px;
+  z-index: 3;
+
+
+}
+
+.starQ {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.block {
+  display: block;
+  order: 1;
+}
+
+.none {
+  display: none;
+}
+
+button {
+  display: block;
+  padding : 10px;
+  border-radius: 10px;
+  margin-top: 15px;
+  font-family: 'Special Elite', cursive !important;
+}
