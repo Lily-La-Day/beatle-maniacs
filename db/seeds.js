@@ -66,7 +66,8 @@ mongoose.connect(dbURI, { useNewUrlParser: true, useCreateIndex: true }, (err, d
           year: 1965,
           single: true,
           writtenBy: 'John Lennon',
-          audio: 'https://cdns-preview-e.dzcdn.net/stream/c-e3ace3b99555b4a5383102d86012cbdf-6.mp3',
+
+          audio: 'https://cdns-preview-f.dzcdn.net/stream/c-f476b3c5d5f7bb6e3ae31a1e2b65d0f3-10.mp3',
           trivia: 'seventh consecutive number one single',
           user: users[0]
         },
