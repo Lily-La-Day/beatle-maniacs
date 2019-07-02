@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
-import Auth from '../../lib/Auth'
+
 
 
 class TracksIndex extends React.Component {
@@ -9,7 +9,7 @@ class TracksIndex extends React.Component {
     super()
 
     this.state = { tracks: null }
-    this.showStars = this.showStars.bind(this)
+    
   }
 
 
@@ -17,15 +17,6 @@ class TracksIndex extends React.Component {
     axios.get('/api/tracks')
       .then(res => this.setState({ tracks: res.data }))
       .catch(err => console.log(err))
-  }
-
-  showStars() {
-    axios.post('/api/showstars', null,  {
-      headers: { Authorization: `Bearer ${Auth.getToken()}`}
-    })
-
-      .then(res => console.log(res) )
-      .catch((err) => console.log(err))
   }
 
 
@@ -56,7 +47,7 @@ class TracksIndex extends React.Component {
                 </section>
 
               ))}
-            
+
             </div>
           </div>
 

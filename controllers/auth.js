@@ -38,8 +38,9 @@ function showUsers(req, res, next) {
     .catch(next)
 }
 //This is the function that should wouldn't work server side.
-function showStars(req, res, next) {
 
+function showstars(req, res, next) {
+  
   console.log('stars', req.params)
   User
     .findById(req.params.userId)
@@ -50,12 +51,11 @@ function showStars(req, res, next) {
 }
 
 
-
 module.exports = {
   register,
   login,
   showUsers,
-  showStars
+  showstars
 
 
 }

@@ -42,6 +42,10 @@ class TracksShow extends React.Component {
 
         <Rating track={track} />
 
+        <div className="info">
+          
+        </div>
+
 
 
 

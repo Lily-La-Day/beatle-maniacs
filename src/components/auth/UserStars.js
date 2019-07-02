@@ -11,9 +11,6 @@ class UserStars extends React.Component {
 
   }
 
-
-
-
   componentDidMount() {
     axios.post('/api/showstars', null,  {
       headers: { Authorization: `Bearer ${Auth.getToken()}`}
