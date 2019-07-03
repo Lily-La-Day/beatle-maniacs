@@ -6,7 +6,7 @@ import Auth from '../../lib/Auth'
 class UserStars extends React.Component {
   constructor() {
     super()
-    this.state = { stars: null }
+    this.state = { stars: 15 }
     // this.showStars = this.showStars.bind(this)
 
   }
