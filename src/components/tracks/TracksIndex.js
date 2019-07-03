@@ -9,7 +9,7 @@ class TracksIndex extends React.Component {
     super()
 
     this.state = { tracks: null }
-    
+
   }
 
 
@@ -32,10 +32,10 @@ class TracksIndex extends React.Component {
 
 
         <section className="frontSection">
-          <div className="container">
+          <div className="container front">
 
 
-            <div className="columns is-mobile is-multiline">
+            <div className="columns is-mobile is-multiline frontSection">
 
               {this.state.tracks.map(track => (
 

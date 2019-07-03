@@ -5,8 +5,21 @@
 }
 
 .frontSection, .disc {
+
+
+  display: flex;
+  justify-content: center;
   background-color: black;
+  padding: 15px;
 }
+
+
+.front {
+justify-content: center;
+
+}
+
+
 
 .songSection, .starSection {
 
@@ -52,10 +65,9 @@ audio {
 
 
 .disc {
-  width: 150px;
-  height: 150px;
-  margin: 10px;
-
+  width: 175px;
+  height: 175px;
+  margin: 15px;
   background-image: url("./assets/beatles.svg");
   background-repeat: no-repeat;
 }
@@ -154,13 +166,12 @@ h1 {
 
 
 .navbar {
+  width: 75%;
 display: flex;
-  height: 80px;
+  height: 60px;
 flex-wrap: wrap;
+justify-content: space-around;
 
-  .open-stars {
-
-  }
 
   h6 {
     background-color: white;
@@ -169,9 +180,8 @@ flex-wrap: wrap;
     position: fixed;
   }
   text-align: center;
-  text-align: left;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
   padding-top: 20px;
   margin-bottom: 2px;
   background-color: white;
@@ -180,8 +190,8 @@ flex-wrap: wrap;
 
   a {
     position: relative;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     color: black;
 
   }
@@ -241,9 +251,21 @@ button {
 
 }
 
-.song-board {
-width: 450px;
+.trackImage {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
 
+.song-board {
+
+width: 500px;
+
+}
+
+.scoreboard {
+margin-top: 0 !important;
+margin-bottom: 5px;
 }
 
 .open-modal {
@@ -255,6 +277,8 @@ border: none;
 .close-modal {
   height: 20px;
 }
+
+
 
 .modal-main {
   background-color: white;

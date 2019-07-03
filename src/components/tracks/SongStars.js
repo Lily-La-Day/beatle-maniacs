@@ -21,17 +21,30 @@ class SongStars extends React.Component {
 
   }
 
+  compareFunction(a, b) {
+    if ( a.ratingsTotal < b.ratingsTotal) {
+      return 1
+    }
+    if (a.ratingsTotal > b.ratingsTotal) {
+      return -1
+    }
+
+    return 0
+  }
+
 
   render(){
     console.log(this.props.show)
+
     if (!this.state.songs) return null
+    console.log(this.state.songs.sort(this.compareFunction))
     return(
 
       <main className={this.props.show ? 'block' : 'none'}>
         <div className="song-board">
 
-
-          {this.state.songs.map(song => (
+          <h3 className="scoreboard"> How have the songs been rated so far? </h3>
+          {this.state.songs.sort().map(song => (
 
             <h4 key={song._id}> {song.title} : {song.ratingsTotal} </h4>
 

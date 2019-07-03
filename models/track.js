@@ -29,6 +29,7 @@ const trackSchema = new mongoose.Schema({
   trivia: {type: String},
   length: {type: Number},
   audio: { type: String },
+  deezer_id: { type: Number, default: 116348656},
   ratingsTotal: {type: Number, default: 0, required: true},
   comments: [ commentSchema ],
   rating: [ ratingSchema ],

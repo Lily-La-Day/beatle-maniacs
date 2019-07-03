@@ -14,6 +14,7 @@ function register(req, res, next) {
     .catch(next)
 }
 
+
 function login(req, res, next) {
   User
     .findOne({ email: req.body.email })
@@ -40,7 +41,7 @@ function showUsers(req, res, next) {
 //This is the function that should wouldn't work server side.
 
 function showstars(req, res, next) {
-  
+
   console.log('stars', req.params)
   User
     .findById(req.params.userId)
