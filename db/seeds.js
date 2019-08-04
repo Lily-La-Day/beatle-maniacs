@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 mongoose.Promise = require('bluebird')
 const { dbURI } = require('../config/environment')
-const user = require('../models/user')
+const User = require('../models/user')
 const Track = require('../models/track')
 
 
@@ -10,7 +10,7 @@ mongoose.connect(dbURI, { useNewUrlParser: true, useCreateIndex: true }, (err, d
   if (err) return console.log(err)
   db.dropDatabase()
     .then(() => {
-      return user.create([
+      return User.create([
         {
           username: 'LilyLaDay',
           email: 'Lily@email.com',

@@ -15,13 +15,7 @@ class UserStars extends React.Component {
     axios.post('/api/showstars', null,  {
       headers: { Authorization: `Bearer ${Auth.getToken()}`}
     })
-
-
-
       .then(res => this.setState({ stars: res.data }))
-
-
-
       .catch(() => this.setState({ error: 'Invalid Crendentials'}))
 
   }
