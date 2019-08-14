@@ -11,16 +11,8 @@ router.route('/tracks')
 router.route('/users')
   .get(users.showUsers)
 
-// router.route('/users/:userId')
-//   .get(secureRoute, users.showStars)
-
-
-
 router.route('/showstars')
   .post(secureRoute, tracks.getUser)
-
-
-
 
 router.route('/tracks/:id')
   .get(tracks.show)

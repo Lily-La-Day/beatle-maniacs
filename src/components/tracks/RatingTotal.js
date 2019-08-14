@@ -1,13 +1,9 @@
 import React from 'react'
 import axios from 'axios'
-import { Link } from 'react-router-dom'
-
 
 class RatingTotal extends React.Component {
   constructor() {
     super()
-
-
   }
 
 

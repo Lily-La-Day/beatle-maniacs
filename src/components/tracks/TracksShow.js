@@ -2,9 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import Sound from 'react-sound'
 import Rating from './Rating'
-// import RatingTotal from './RatingTotal'
-// import { Link } from 'react-router-dom'
-// import Auth from '../../lib/Auth'
+
 
 class TracksShow extends React.Component {
   constructor() {

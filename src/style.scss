@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap');
 * {
 
   color: white;
@@ -9,7 +9,7 @@
 
   display: flex;
   justify-content: center;
-  background-color: black;
+  background-color: white;
   padding: 15px;
 }
 
@@ -23,8 +23,8 @@ justify-content: center;
 
 .songSection, .starSection {
 
-  font-family: 'Cutive Mono', monospace;
-
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1pt;
   background-color: grey;
 
   h2 {
@@ -79,7 +79,7 @@ span {
 h3 {
 
   text-align: center;
-  font-family: 'Cutive Mono', monospace;
+  font-family: 'Open Sans', sans-serif;
   color: white;
   letter-spacing: -1pt;
   background-color: rgba(0, 0, 0, 0.5) !important;
@@ -90,13 +90,13 @@ h3 {
 }
 
 body {
-  font-family: 'Special Elite', cursive;
+    font-family: 'Open Sans', sans-serif;
 
 }
 
 .home {
   height: 100vh;
-  font-family: 'Fredericka the Great', cursive;
+  font-family: 'Open Sans', sans-serif;
   font-size: 45pt;
   color: white;
   h1 {
@@ -185,7 +185,7 @@ justify-content: space-between;
   padding-top: 20px;
   margin-bottom: 2px;
   background-color: white;
-  font-family: 'Special Elite', cursive;
+  font-family: 'Open Sans', sans-serif;
 
 
   a {
@@ -219,7 +219,7 @@ form {
   text-align: center;
   ::placeholder {
     text-align: center;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Open Sans', sans-serif;
   }
   button {
     margin: 0 auto;
@@ -311,5 +311,5 @@ button {
   padding : 10px;
   border-radius: 10px;
   margin-top: 15px;
-  font-family: 'Special Elite', cursive !important;
+  font-family: 'Open Sans', sans-serif !important;
 }
