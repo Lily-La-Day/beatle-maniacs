@@ -123,7 +123,6 @@ This function identifies the current user as a user by use of the JWT (JSON web 
 
 A jwt is made up of three parts, a header, a payload and a signature. With in the payload is a subject id that allows us to identify specific users and assign them as the "current user".
 
-This combination of processes proved a valuable lesson, this was my very first experience of writing a JavaScript promise and also my first time using a JSON Web Token. Both of which are concepts I would soon come to consider as fundamental to my development process (specifically when working with Node.js in the case of the former).
 
 
 
@@ -182,6 +181,36 @@ The JSON object returned from a simple Show GET request looks like this for each
 
 
 <img src="src/assets/json.png" width="400">
+
+## Wins and Key Learnings
+
+The combination of processes involved in implementing the user authentication proved a valuable lesson, this was my very first experience of writing a JavaScript promise and also my first time using a JSON Web Token. Both of which are concepts I would soon come to consider as fundamental to my development process (specifically when working with Node.js in the case of the former).
+
+I was also pleased that I worked out how to incorporate a working rating system into my backend, I was pleasaed that I managed to formulate a rating function that would accurately designate stars to the tracks while subtracting them from the user but only if the user had enough stars to give! I had purposefully given my self a challenge here as this was not part of the brief but I wanted to experiment with controller functions as much as possible and I was pleased that I did manage to achieve what I set out to: 
+
+```js
+function ratingCreateRoute(req, res, next) {
+  req.body.user = req.currentUser
+  Track
+    .findById(req.params.id)
+    .populate('user')
+    .then(track => {
+      const rating = req.body.rating
+      if (req.currentUser.stars - rating >= 0) {
+        req.currentUser.stars = req.currentUser.stars - rating
+      } else if (req.currentUser.stars - rating < 0) throw new Error('Not Found')
+      if(!track) throw new Error('Not Found')
+      track.rating.push(req.body)
+      track.ratingsTotal = track.ratingsTotal + rating
+      req.currentUser.save()
+      console.log(req.currentUser, track)
+      return track.save()
+    })
+    .then(track => res.status(201).json(track))
+    .catch(next)
+}
+
+```
 
 
 
