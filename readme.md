@@ -182,7 +182,7 @@ The JSON object returned from a simple Show GET request looks like this for each
 
 <img src="src/assets/json.png" width="400">
 
-## Wins and Key Learnings
+# Wins and Key Learnings
 
 The combination of processes involved in implementing the user authentication proved a valuable lesson, this was my very first experience of writing a JavaScript promise and also my first time using a JSON Web Token. Both of which are concepts I would soon come to consider as fundamental to my development process (specifically when working with Node.js in the case of the former).
 
@@ -214,7 +214,7 @@ function ratingCreateRoute(req, res, next) {
 
 
 
-## Challenges and Future Improvements
+# Challenges and Future Improvements
 
 As the front-end for this project was a last minute addition there are a few components with which I am not quite satisfied.
 
