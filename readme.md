@@ -6,7 +6,7 @@
 
 Before we started the project we were given this brief, we were told that our app must:
 
-* **Include at least one model **
+* **Include at least one model**
 * **Be able to perform full CRUD actions** -
 (Create, Read, Update, Delete)
 * **Include a seeds file**
