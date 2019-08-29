@@ -182,7 +182,7 @@ The JSON object returned from a simple Show GET request looks like this for each
 
 <img src="src/assets/json.png" width="400">
 
-# Wins and Key Learnings
+### Wins and Key Learnings
 
 The combination of processes involved in implementing the user authentication proved a valuable lesson, this was my very first experience of writing a JavaScript promise and also my first time using a JSON Web Token. Both of which are concepts I would soon come to consider as fundamental to my development process (specifically when working with Node.js in the case of the former).
 
@@ -214,11 +214,13 @@ function ratingCreateRoute(req, res, next) {
 
 
 
-# Challenges and Future Improvements
+### Challenges and Future Improvements
 
-As the front-end for this project was a last minute addition there are a few components with which I am not quite satisfied.
+As the front-end for this project was a last minute addition there are a few components with which I am not quite satisfied. The styling of the homepage in particular is something that I would like to redo completely using the Bulma framework as familiarity with such tools is something that I know is important. 
 
-In order to implement the star rating system I resorted to using some Vanilla JavaScript which I know is far from ideal. I would like to go back and re-write this component in a more "Reactive" way.
+The implementation of the star rating system on the front end was equally as challenging as on the back and I resorted to using some Vanilla JavaScript which I know is far from ideal. I would like to go back and re-write this component in a more "Reactive" way. 
+
+
 
 
 <img src="src/assets/rating.png" width="900">
